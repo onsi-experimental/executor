@@ -5,10 +5,10 @@ set -e -x
 
 FIRST_GOPATH=`echo $GOPATH | cut -d':' -f1`
 
-pushd $FIRST_GOPATH
-git clone https://github.com/onsi-experimental/gold-cartridge
-ln -s ./gold-cartridge/Cartridge.lock ./Cartridge.lock
+pushd $GOPATH
+git clone https://github.com/onsi-experimental/workspace
 popd
+cp $GOPATH/workspace/Cartridge.lock ./Cartridge.lock
 
 mkdir -p $FIRST_GOPATH/bin
 export PATH=$FIRST_GOPATH/bin:$PATH
