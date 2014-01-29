@@ -6,7 +6,7 @@ set -e -x
 FIRST_GOPATH=`echo $GOPATH | cut -d':' -f1`
 
 pushd $FIRST_GOPATH
-git clone https://github.co/onsi-experimental/gold-cartridge
+git clone https://github.com/onsi-experimental/gold-cartridge
 ln -s ./gold-cartridge/Cartridge.lock ./Cartridge.lock
 popd
 
