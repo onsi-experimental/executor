@@ -6,12 +6,12 @@ import (
 	"log"
 	"strings"
 
-	Bbs "github.com/cloudfoundry-incubator/runtime-schema/bbs"
 	"github.com/cloudfoundry/storeadapter/etcdstoreadapter"
 	"github.com/cloudfoundry/storeadapter/workerpool"
+	Bbs "github.com/onsi-experimental/runtime-schema/bbs"
 	"github.com/vito/gordon"
 
-	"github.com/cloudfoundry-incubator/executor/executor"
+	"github.com/onsi-experimental/executor/executor"
 )
 
 var wardenNetwork = flag.String(
